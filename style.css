@@ -1,0 +1,121 @@
+/* === General Styles === */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+/* === Container === */
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* === Input & Buttons === */
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Base button */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Action buttons */
+.btn-delete {
+  background: #dc3545;
+}
+.btn-delete:hover {
+  background: #a71d2a;
+}
+
+.btn-complete {
+  background: #28a745;
+  margin-left: 8px;
+}
+.btn-complete:hover {
+  background: #1e7e34;
+}
+
+#addBtn {
+  background: #007bff;
+  margin-left: 6px;
+}
+#addBtn:hover {
+  background: #0056b3;
+}
+
+/* === Task List === */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* makes it responsive */
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+ul li span {
+  flex: 1;
+  word-break: break-word; /* long text wraps */
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #addBtn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li .btn {
+    width: 100%;
+  }
+}
